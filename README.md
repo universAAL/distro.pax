@@ -38,16 +38,19 @@ How to create your own Runner, step by step
 
 First thing you need to know: You can only *create* Runner folders in uAAL-development computers, that have at least Maven installed. So make sure you have it before starting.
 
-1.  First, it is always recommended that you copy/paste a Runner folder that you already know is working, and then modify it. You can just clone this (repository)[https://github.com/universAAL/distro.pax]. Another option it to use the Maven Archetype for this purpose.
+1.  First, it is always recommended that you copy/paste a Runner folder that you already know is working, and then modify it. You can just clone this [repository](https://github.com/universAAL/distro.pax). Another option it to use the Maven Archetype for this purpose.
 2.  Edit the **pom.xml**
     1.  Change GroupId if you want, but you *must* change the ArtifactId (set a coherent name for your runner, according to the run configuration you wish to set up) *or* the version number.
     2.  Put the bundles you want into the provision list. Put them in the order you want them to start. If you use for instance the example folder, you´ll see the bundles are ordered in sections, for better reading. Which bundles you need or want to run is out of scope in this tutorial, but the example provides a good starting point.
     3.  To put a bundle on your own you follow this format: 
-     <provision>[wrap:]mvn:{groupId}/{artifactId}/{version} [@level] [@nostart] </provision>
-**wrap:** is only for non-OSGi bundles i.e: libraries
-**{groupId}/{artifactId}/{version}** correspond to the Maven coordinates of the bundle|library you intend to add to the run configuration
-**@level** optionally set the run level for the bundle|library, used to make sure they are started in the specidied order (1 first then 2,3,...)
-**@nostart** optionally set felix not to start the bundle, it installs it but does not start it
+	```
+	<provision>[wrap:]mvn:{groupId}/{artifactId}/{version} [@level] [@nostart] </provision>
+	```
+	where:
+	- **wrap:** is only for non-OSGi bundles i.e: libraries
+	- **{groupId}/{artifactId}/{version}** correspond to the Maven coordinates of the bundle|library you intend to add to the run configuration
+	- **@level** optionally set the run level for the bundle|library, used to make sure they are started in the specidied order (1 first then 2,3,...)
+	- **@nostart** optionally set felix not to start the bundle, it installs it but does not start it
 
 3.  Edit the **pax.configuration** file
     1.  Usually, if you have copied the folder from one that already worked, you don´t need to change the properties.
