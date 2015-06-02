@@ -5,7 +5,7 @@
 	<groupId>org.universAAL.runners</groupId>
 	<artifactId>pax.runner</artifactId>
 	<packaging>jar</packaging>
-	<version>3.2.0</version>
+	<version>3.3.0</version>
 	<!-- version is here equal to the level of version of the middleware -->
 	<name>Runner Folder</name>
 
