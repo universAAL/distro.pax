@@ -1,9 +1,0 @@
-.settings/
-.classpath
-.project
-target/
-runner/bundles/
-runner/log/
-runner/cache/
-runner/deploy-pom.xml
-runner/felix/cache/
