@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:profiles xmlns="http://ipe.fzi.de/jcc" xmlns:ns2="de.fzi.ipe.jcc.model.jaxb">
+    <ontologyInstances>
+        <ontologyInstance id="">
+            <subprofiles>
+                <subprofile name="User Identification">
+                    <collections/>
+                    <enumObjects>
+                        <enumObject type="gender">
+                            <description>Gender of the person</description>
+                            <label>Gender:</label>
+                            <required>false</required>
+                            <selectedValue></selectedValue>
+                            <treeParentNode>false</treeParentNode>
+                            <values>
+<value>Do not specify</value>
+<value>Partly male female</value>
+<value>Male</value>
+<value>Female</value>
+                            </values>
+                        </enumObject>
+                        <enumObject type="userRole">
+                            <description>User Role of a person</description>
+                            <label>User Role:</label>
+                            <required>true</required>
+                            <selectedValue></selectedValue>
+                            <treeParentNode>true</treeParentNode>
+                            <values>
+<value>Assisted Person</value>
+<value>Caregiver</value>
+<value>Neighbour</value>
+<value>Service Provider</value>
+<value>Relative</value>
+<value>Technician</value>
+<value>Inhabitant</value>
+                            </values>
+                        </enumObject>
+                    </enumObjects>
+                    <simpleObjects>
+                        <string name="Given name">
+                            <description>The full name of the Person</description>
+                            <id>true</id>
+                            <label>Given name:</label>
+                            <required>true</required>
+                            <validator></validator>
+                            <defaultValue></defaultValue>
+                            <value></value>
+                        </string>
+                        <string name="organizationName">
+                            <description>The Name of the organization</description>
+                            <id>false</id>
+                            <label>Organization name:</label>
+                            <required>false</required>
+                            <validator></validator>
+                            <defaultValue></defaultValue>
+                            <value></value>
+                        </string>
+                        <string name="organizationUnit">
+                            <description>The organization unit</description>
+                            <id>false</id>
+                            <label>Organization unit:</label>
+                            <required>false</required>
+                            <validator></validator>
+                            <defaultValue></defaultValue>
+                            <value></value>
+                        </string>
+                    </simpleObjects>
+                </subprofile>
+                <subprofile name="Personal Information">
+                    <collections/>
+                    <enumObjects/>
+                    <simpleObjects>
+                        <calendar name="birthday">
+                            <description>Birthday</description>
+                            <id>false</id>
+                            <label>Birthday:</label>
+                            <required>false</required>
+                            <validator></validator>
+                            <value></value>
+                        </calendar>
+                        <boolean name="formalSalutation">
+                            <description>Shows if Formal Salutation is desired</description>
+                            <id>false</id>
+                            <label>Formal Salutation</label>
+                            <required>false</required>
+                            <validator></validator>
+                            <value>false</value>
+                        </boolean>
+                        <string name="preferredLanguage">
+                            <description>Add your preferred langugage</description>
+                            <id>false</id>
+                            <label>Preferred Language:</label>
+                            <required>false</required>
+                            <validator></validator>
+                            <defaultValue></defaultValue>
+                            <value></value>
+                        </string>
+                    </simpleObjects>
+                </subprofile>
+                <subprofile name="Contact Information">
+                    <collections/>
+                    <enumObjects/>
+                    <simpleObjects>
+                        <string name="street">
+                            <description>Street, where person lives</description>
+                            <id>false</id>
+                            <label>Street/Nr:</label>
+                            <required>false</required>
+                            <validator></validator>
+                            <defaultValue></defaultValue>
+                            <value></value>
+                        </string>
+                        <integer name="postalCode">
+                            <description>Postalcode of the person</description>
+                            <id>false</id>
+                            <label>Postal Code:</label>
+                            <required>false</required>
+                            <validator>RegexpValidator</validator>
+                            <defaultValue>0</defaultValue>
+                            <value>0</value>
+                        </integer>
+                        <string name="city">
+                            <description>City, where the person lives</description>
+                            <id>false</id>
+                            <label>City:</label>
+                            <required>false</required>
+                            <validator></validator>
+                            <defaultValue></defaultValue>
+                            <value></value>
+                        </string>
+                        <string name="state">
+                            <description>State of person</description>
+                            <id>false</id>
+                            <label>State:</label>
+                            <required>false</required>
+                            <validator></validator>
+                            <defaultValue></defaultValue>
+                            <value></value>
+                        </string>
+                        <string name="country">
+                            <description>Country of person</description>
+                            <id>false</id>
+                            <label>Country:</label>
+                            <required>false</required>
+                            <validator></validator>
+                            <defaultValue></defaultValue>
+                            <value></value>
+                        </string>
+                        <string name="officeTelephone">
+                            <description>Office Telephone</description>
+                            <id>false</id>
+                            <label>Office Telephone:</label>
+                            <required>false</required>
+                            <validator></validator>
+                            <defaultValue></defaultValue>
+                            <value></value>
+                        </string>
+                        <string name="homeTelephone">
+                            <description>Home Telephone</description>
+                            <id>false</id>
+                            <label>Home Telephone:</label>
+                            <required>false</required>
+                            <validator></validator>
+                            <defaultValue></defaultValue>
+                            <value></value>
+                        </string>
+                        <string name="mobilePhone">
+                            <description>Mobile Phone</description>
+                            <id>false</id>
+                            <label>Mobile Telephone:</label>
+                            <required>false</required>
+                            <validator></validator>
+                            <defaultValue></defaultValue>
+                            <value></value>
+                        </string>
+                    </simpleObjects>
+                </subprofile>
+                <subprofile name="Email-Account Information">
+                    <collections/>
+                    <enumObjects>
+                        <enumObject type="emailProtocol">
+                            <description>The used Mail protocol e.g. imaps</description>
+                            <label>Mail protocol:</label>
+                            <required>false</required>
+                            <selectedValue></selectedValue>
+                            <treeParentNode>false</treeParentNode>
+                            <values>
+<value>imaps</value>
+<value>pop3</value>
+<value>webmail</value>
+<value>X.400</value>
+                            </values>
+                        </enumObject>
+                    </enumObjects>
+                    <simpleObjects>
+                        <string name="emailAddress">
+                            <description>Emailaddress of the person</description>
+                            <id>false</id>
+                            <label>Email:</label>
+                            <required>false</required>
+                            <validator>EmailValidator</validator>
+                            <defaultValue></defaultValue>
+                            <value></value>
+                        </string>
+                        <string name="emailServer">
+                            <description>The used Mail server e.g. pop3.gmail.com</description>
+                            <id>false</id>
+                            <label>Mail server:</label>
+                            <required>false</required>
+                            <validator></validator>
+                            <defaultValue></defaultValue>
+                            <value></value>
+                        </string>
+                        <string name="userName">
+                            <description>The username of the person</description>
+                            <id>false</id>
+                            <label>Nickname:</label>
+                            <required>false</required>
+                            <validator></validator>
+                            <defaultValue></defaultValue>
+                            <value></value>
+                        </string>
+                        <string name="emailPassword">
+                            <description>The password of the Email-Account</description>
+                            <id>false</id>
+                            <label>E-Mail password:</label>
+                            <required>false</required>
+                            <validator></validator>
+                            <defaultValue></defaultValue>
+                            <value></value>
+                        </string>
+                    </simpleObjects>
+                </subprofile>
+            </subprofiles>
+        </ontologyInstance>
+    </ontologyInstances>
+</ns2:profiles>

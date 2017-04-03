@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:profiles xmlns="http://ipe.fzi.de/jcc" xmlns:ns2="de.fzi.ipe.jcc.model.jaxb">
+    <ontologyInstances>
+        <ontologyInstance id="">
+            <subprofiles>
+                <subprofile name="Control-Information">
+                    <collections/>
+                    <enumObjects>
+                    <enumObject type="rooms">
+                            <description>Name of the Room</description>
+                            <label>Room:</label>
+                            <required>true</required>
+                            <treeParentNode>false</treeParentNode>
+                            <selectedValue></selectedValue>
+                            <values>
+<value>Kitchen</value>
+<value>Dining Room</value>
+<value>Bedroom</value>
+<value>Bath</value>
+<value>Nursery</value>
+<value>Living Room</value>
+<value>Storage Room</value>
+<value>Corridor</value>
+                            </values>
+                        </enumObject>
+                        <enumObject type="devicetype">
+                            <description>Type of Device</description>
+                            <label>Type of Device:</label>
+                            <required>true</required>
+                            <treeParentNode>true</treeParentNode>
+                            <selectedValue></selectedValue>
+                         <values>
+<value>FS20 Actuator</value>
+<value>FS20 Sensor</value>
+<value>Other Hardware</value>
+                            </values>
+                        </enumObject>
+                        <enumObject type="type">
+                            <description>Type of Sensor or Actor</description>
+                            <label>Sensor/Actor Type: </label>
+                            <required>true</required>
+                            <selectedValue></selectedValue>
+                            <values>
+<value>On/Off Sensor</value>
+<value>Contact Sensor</value>
+<value>Motion Sensor</value>
+<value>On/Off Actuator</value>
+<value>Humidity Sensor</value>
+<value>Plug PC</value>
+                            </values>
+                        </enumObject>
+                    </enumObjects>
+                    <simpleObjects>
+                        <string name="deviceAddress">
+                            <description>The address of the device</description>
+                            <label>Device Address:</label>
+                            <required>true</required>
+                            <id>true</id>
+                            <value></value>
+                        </string>
+                    	<calendar name="hardwareSettingTime">
+                    		<label>Setting time:</label>
+                    		<description>Setting time of Hardware</description>
+                    		<required>false</required>
+                    		<value></value>
+                    	</calendar>
+						<calendar name="lastActivityTime">
+                    		<label>Last activity time:</label>
+                    		<description>Last activity time of Hardware</description>
+                    		<required>false</required>
+                    		<value></value>
+                    	</calendar>
+                    </simpleObjects>
+                </subprofile>
+            </subprofiles>
+        </ontologyInstance>
+        </ontologyInstances>
+        </ns2:profiles>
+        

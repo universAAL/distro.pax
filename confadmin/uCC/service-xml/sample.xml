@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<services
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="schema.xsd">
+	<service>
+		<title>Nutritional Advisor</title>
+		<subtitle> </subtitle>
+		<category>Nutrition</category>
+		<rating>n/a</rating>
+		<details>
+		The Nutritional Advisor helps you to follow a personalised nutrition plan. 
+		This plan is created with a supervising medic and can be monitored by him.
+		</details>
+		<image>promo_nutriadv.jpg</image>
+	</service>
+	<service>
+		<title>Activity Monitoring</title>
+		<subtitle> </subtitle>
+		<category>Safety</category>
+		<rating>n/a</rating>
+		<details>
+		The Nutritional Advisor helps you to follow a personalised nutrition plan. 
+		This plan is created with a supervising medic and can be monitored by him.
+		</details>
+		<image>promo_activitymon.jpg</image>
+	</service>
+	<service>
+		<title>Fall Detection</title>
+		<subtitle> </subtitle>
+		<category>Safety</category>
+		<rating>n/a</rating>
+		<details>
+		Sensor mats automatically send an emergency call to the supervisor when they are loaded with weight. In this way they could help a caregiver to recognize the fall of a person faster.
+		</details>
+		<image>promo_falldetection.jpg</image>
+	</service>
+	<service>
+		<title>Motion Detection</title>
+		<subtitle> </subtitle>
+		<category>Safety</category>
+		<rating>n/a</rating>
+		<details>
+		Sensor mats automatically send an emergency call to the supervisor when they are loaded with weight. In this way they could help a caregiver to recognize the fall of a person faster.
+		</details>
+		<image>promo_motiondetection.jpg</image>
+	</service>
+</services>
